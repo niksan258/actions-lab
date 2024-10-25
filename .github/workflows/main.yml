@@ -28,7 +28,7 @@ jobs:
             path: .
         - name: Run linter
           uses: super-linter/super-linter@v7.1.0
-          with:
+          env:
             DEFAULT_BRANCH: main
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
