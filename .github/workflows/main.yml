@@ -26,11 +26,10 @@ jobs:
           with:
             name: code
             path: .
-        - name: Run linter
-          uses: super-linter/super-linter@v7.1.0
+        - name: Run linting
+          uses: super-linter/super-linter/slim@v5 
           env:
             DEFAULT_BRANCH: main
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            DISABLE_ERRORS: true  
 
 
